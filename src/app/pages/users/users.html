@@ -1,0 +1,33 @@
+
+<div class="users-wrapper">
+  <h2 class="page-title">User Management</h2>
+
+  <div class="users-grid">
+    @for (u of users; track u.id) {
+      <div class="user-card">
+
+        <!-- Profile -->
+        <div class="user-header">
+          <img [src]="u.image" [alt]="u.firstName">
+          <div>
+            <h3>{{ u.firstName }} {{ u.lastName }}</h3>
+            <span class="role">{{ u.role }}</span>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="user-info">
+          <p><strong>Email:</strong> {{ u.email }}</p>
+          <p><strong>Phone:</strong> {{ u.phone }}</p>
+          <p><strong>Gender:</strong> {{ u.gender }}</p>
+          <p><strong>Age:</strong> {{ u.age }}</p>
+          <p><strong>University:</strong> {{ u.university }}</p>
+          <p><strong>Company:</strong> {{ u.company.name }}</p>
+          <p><strong>Department:</strong> {{ u.company.department }}</p>
+          <p><strong>Location:</strong> {{ u.address.city }}, {{ u.address.country }}</p>
+        </div>
+
+      </div>
+    }
+  </div>
+</div>

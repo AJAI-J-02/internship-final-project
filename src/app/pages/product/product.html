@@ -1,0 +1,54 @@
+<div class="products-wrapper">
+  <h2 class="page-title">Our Products</h2>
+  
+  <div class="products-grid">
+    
+
+    @for (p of products; track p.id) {
+      <div class="product-card">
+
+        
+        <div class="image-box">
+          <img [src]="p.thumbnail" [alt]="p.title">
+          <span class="discount">
+            {{ p.discountPercentage }}% OFF
+          </span>
+        </div>
+
+       
+        <div class="product-info">
+          <h3 class="title">{{ p.title }}</h3>
+          <p class="category">{{ p.category}}</p>
+
+          <div class="rating">
+            ⭐ {{ p.rating }} / 5
+          </div>
+
+          <div class="price">
+            ₹{{ p.price }}
+          </div>
+
+          <p class="stock" [class.out]="p.stock === 0">
+            {{ p.availabilityStatus }}
+          </p>
+
+          <button class="cart-btn">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+    }
+
+  </div>
+</div>
+<!-- <p>Total products: {{ products.length }}</p>
+
+<div class="products-grid">
+  @for (p of products; track p.id) {
+    <div class="product-card">
+      <h3>{{ p.title }}</h3>
+      <img [src]="p.thumbnail" width="150">
+    </div>
+  }
+</div> -->

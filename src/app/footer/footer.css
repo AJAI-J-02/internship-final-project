@@ -1,0 +1,109 @@
+
+.footer {
+  background: linear-gradient(120deg, #1d2671, #c33764);
+  color: #fff;
+  padding: 70px 8% 30px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+
+.footer-column.brand h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  background: linear-gradient(120deg, #ff6a00, #ffb347);
+  -webkit-background-clip: text;
+  background-clip: text;  /* Add this: standard property for modern browsers */
+  -webkit-text-fill-color: transparent;
+  color: transparent;  /* Add this: standard property for text color */
+}
+
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.85;
+  transition: opacity 0.3s, padding-left 0.3s;
+}
+
+.footer-column ul li a:hover {
+  opacity: 1;
+  padding-left: 6px;
+}
+
+.newsletter {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(120deg, #ff6a00, #ee0979);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.newsletter button:hover {
+  opacity: 0.9;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  opacity: 0.8;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+}

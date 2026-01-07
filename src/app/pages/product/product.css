@@ -1,0 +1,134 @@
+/* Page */
+.products-wrapper {
+  padding: 50px 8%;
+  background: #f8f9fb;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.product-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.image-box {
+  position: relative;
+  height: 230px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Discount */
+.discount {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ff3d00;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Info */
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.category {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #f9a825;
+}
+
+/* Price */
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+
+/* Stock */
+.stock {
+  font-size: 13px;
+  color: #388e3c;
+  margin-bottom: 15px;
+}
+
+.stock.out {
+  color: #d32f2f;
+}
+
+/* Button */
+.cart-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #ff6a00, #ee0979);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.cart-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products-wrapper {
+    padding: 30px 5%;
+  }
+}
+
+
+

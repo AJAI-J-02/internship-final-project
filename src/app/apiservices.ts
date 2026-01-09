@@ -8,12 +8,12 @@ export class Apiservices {
   constructor(private http:HttpClient){}
   getproduct()
   {
-    return this.http.get("https://dummyjson.com/products")
+    return this.http.get('https://dummyjson.com/products')
   }
 
   getUsers()
   {
-     return this.http.get("https://dummyjson.com/Users")
+     return this.http.get('https://dummyjson.com/Users')
   }
 }
   
